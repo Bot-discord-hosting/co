@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecudsqfre-c4(@g--#6v_9^2t_tnrkdkdsljgj2so29!@2&(^gio&y&dss-&tsv!-3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "*",
@@ -32,7 +32,7 @@ CSRF_TRUSTED_ORIGINS = [
     "*",
     "co-production.up.railway.app",
 ]
-
+CORS_ALLOWED_ORIGINS = ["*"]
 
 # Application definition
 
@@ -55,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'chatappprj.urls'
 
